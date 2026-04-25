@@ -13,6 +13,43 @@ from sentence_transformers import SentenceTransformer
 
 st.set_page_config(page_title="SDG Community Assistant", layout="wide")
 
+LLMOPS_API_URL = "http://localhost:8001/infer"
+
+def ask_llmops(prompt: str, task: str = "summarization") -> str:
+    """
+    Project 1 → Project 2 → Project 3 integration
+
+    Flow:
+    UI → LLMOps API → (Fine-tuned model → Local → Remote fallback)
+    """
+
+    try:
+        response = requests.post(
+            LLMOPS_API_URL,
+            json={
+                "task": task,
+                "text": prompt,
+                "model_preference": "auto",  # keep auto until adapter is ready
+                "max_tokens": 700
+            },
+            timeout=180,
+        )
+        response.raise_for_status()
+
+        data = response.json()
+
+        # 🔥 Show which model was used (VERY useful)
+        model_used = data.get("model_used", "unknown")
+
+        return f"""
+                    Model Used: {model_used}
+
+                    {data.get("output", "")}
+                """
+
+    except Exception as e:
+        return f"Error calling LLMOps API: {e}"
+
 OLLAMA_URL = "http://localhost:11434/api/generate"
 OLLAMA_MODEL = "phi3"
 
@@ -265,7 +302,7 @@ Limitations:
 """
 
         start = time.time()
-        answer = ask_phi(prompt)
+        answer = ask_llmops(prompt)
         end = time.time()
 
         st.subheader("Source-Aware Solution Plan")
@@ -367,7 +404,7 @@ Limitations:
 - 
 """
                 start = time.time()
-                answer = ask_phi(prompt)
+                answer = ask_llmops(prompt)
                 end = time.time()
 
                 st.subheader("Answer")
@@ -397,7 +434,7 @@ Relevant SDGs:
 Limitations:
 - 
 """
-                st.write(ask_phi(prompt))
+                st.write(ask_llmops(prompt))
 
         with tab3:
             if st.button("Generate Summary"):
@@ -420,4 +457,4 @@ Relevant SDGs:
 Limitations:
 - 
 """
-                st.write(ask_phi(prompt))
+                st.write(ask_llmops(prompt))

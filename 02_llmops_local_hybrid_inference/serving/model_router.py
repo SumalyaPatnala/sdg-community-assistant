@@ -1,6 +1,7 @@
 import os
 import requests
 from serving.prompts import build_prompt
+from serving.finetuned_model import FineTunedModel
 
 
 class ModelRouter:
@@ -16,6 +17,7 @@ class ModelRouter:
     """
 
     def __init__(self):
+        self.finetuned_model = FineTunedModel()
         self.local_url = os.getenv("OLLAMA_URL", "http://localhost:11434/api/generate")
         self.local_model = os.getenv("LOCAL_MODEL", "phi3")
 
@@ -37,6 +39,7 @@ class ModelRouter:
         return bool(self.remote_url)
 
     def model_registry(self):
+        
         return {
             "local": {
                 "name": self.local_model,
@@ -48,17 +51,34 @@ class ModelRouter:
                 "runtime": "Hugging Face Inference API",
                 "url": self.remote_url
             },
-            "routing_policy": "auto -> local first, then remote fallback"
+            "fine_tuned": {
+            "base_model": self.finetuned_model.base_model,
+            "adapter_path": self.finetuned_model.adapter_path,
+            "available": self.finetuned_model.available()
+            },
+            "routing_policy": "auto -> fine-tuned first, then local, then remote fallback"
         }
 
     def generate(self, task: str, text: str, model_preference: str = "auto", max_tokens: int = 512):
         prompt = build_prompt(task=task, text=text)
+
+        if model_preference == "finetuned":
+            if self.finetuned_model.available():
+                return self.finetuned_model.generate(prompt, max_tokens), "finetuned:lora-adapter"
+            raise RuntimeError("Fine-tuned adapter not found.")
 
         if model_preference == "local":
             return self._generate_local(prompt, max_tokens), f"local:{self.local_model}"
 
         if model_preference == "remote":
             return self._generate_remote(prompt, max_tokens), "remote:huggingface"
+
+        # Auto mode: fine-tuned first, then local, then remote.
+        try:
+            if self.finetuned_model.available():
+                return self.finetuned_model.generate(prompt, max_tokens), "finetuned:lora-adapter"
+        except Exception:
+            pass
 
         try:
             if self.local_available():

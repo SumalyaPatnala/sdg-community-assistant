@@ -1,0 +1,1 @@
+{"request_id": "376125bb-39f2-4ae1-a764-c4045b9f07d1", "task": "summarization", "model_used": "local:phi3", "latency_ms": 22623.07, "input_chars": 6349, "status": "success", "timestamp": "2026-04-25T19:49:23.967122"}
