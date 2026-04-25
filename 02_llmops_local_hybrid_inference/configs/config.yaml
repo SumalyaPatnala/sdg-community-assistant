@@ -1,0 +1,18 @@
+local_model:
+  runtime: ollama
+  name: phi3
+  url: http://localhost:11434/api/generate
+
+remote_model:
+  runtime: huggingface
+  name: microsoft/Phi-3-mini-4k-instruct
+
+routing:
+  default_policy: auto
+  local_first: true
+  fallback_to_remote: true
+
+monitoring:
+  log_file: logs/inference_events.jsonl
+  track_latency: true
+  track_success_rate: true
