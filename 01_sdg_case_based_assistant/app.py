@@ -20,7 +20,7 @@ def ask_llmops(prompt: str, task: str = "summarization") -> str:
     Project 1 → Project 2 → Project 3 integration
 
     Flow:
-    UI → LLMOps API → (Fine-tuned model → Local → Remote fallback)
+    UI → LLMOps API → (Fine-tuned → Local → Remote fallback)
     """
 
     try:
@@ -29,7 +29,7 @@ def ask_llmops(prompt: str, task: str = "summarization") -> str:
             json={
                 "task": task,
                 "text": prompt,
-                "model_preference": "auto",  # keep auto until adapter is ready
+                "model_preference": "auto",  # switch to "finetuned" after training
                 "max_tokens": 700
             },
             timeout=180,
@@ -38,17 +38,24 @@ def ask_llmops(prompt: str, task: str = "summarization") -> str:
 
         data = response.json()
 
-        # 🔥 Show which model was used (VERY useful)
         model_used = data.get("model_used", "unknown")
+        output = data.get("output", "")
 
+        # ✅ Clean formatting for Streamlit
         return f"""
-                    Model Used: {model_used}
+### 🔍 Model Used: `{model_used}`
 
-                    {data.get("output", "")}
-                """
+{output}
+"""
+
+    except requests.exceptions.Timeout:
+        return "⚠️ Request timed out. Try again."
+
+    except requests.exceptions.ConnectionError:
+        return "❌ Cannot connect to LLMOps API. Is FastAPI running?"
 
     except Exception as e:
-        return f"Error calling LLMOps API: {e}"
+        return f"❌ Unexpected error: {e}"
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
 OLLAMA_MODEL = "phi3"
