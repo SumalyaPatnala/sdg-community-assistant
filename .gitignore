@@ -1,0 +1,15 @@
+venv/
+.env
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+models/
+adapters/
+data/raw_docs/
+data/index/
+*.pkl
+*.bin
+*.safetensors
+*.gguf
+.cache/

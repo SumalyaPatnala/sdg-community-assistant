@@ -1,0 +1,320 @@
+[
+  {
+    "case_id": "who_unicef_wash_hcf_001",
+    "source_name": "WHO/UNICEF",
+    "source_type": "UN agency guidance and case studies",
+    "source_url": "https://www.unicef.org/media/51591/file/WASH-in-health-care-facilities-practical-steps-2019%20.pdf",
+    "published_year": 2019,
+    "last_verified": "2026-04-23",
+    "trust_level": "High",
+    "country": "Global",
+    "region": "Health care facilities",
+    "problem_category": [
+      "healthcare",
+      "sanitation",
+      "hygiene",
+      "WASH"
+    ],
+    "community_problem": "Health facilities lack safe water, sanitation, hygiene, waste management, and cleaning practices.",
+    "sdgs": [
+      "SDG 3",
+      "SDG 6"
+    ],
+    "intervention": [
+      "Develop national WASH roadmaps and targets",
+      "Improve infrastructure and maintenance",
+      "Engage communities and health workers",
+      "Strengthen monitoring and accountability"
+    ],
+    "evidence_summary": "WHO/UNICEF identify eight practical steps for improving WASH in health care facilities, illustrated with country examples and case studies.",
+    "recommended_transfer": [
+      "Assess water, sanitation, hygiene, waste, and cleaning gaps",
+      "Set simple local improvement targets",
+      "Create a facility/community maintenance plan",
+      "Engage health workers and local community groups",
+      "Track progress monthly"
+    ],
+    "urgent_warning": "For severe illness, dehydration, persistent vomiting, infants, elderly, pregnant people, or outbreak-like symptoms, contact qualified healthcare workers immediately.",
+    "limitations": "Guidance must be adapted to local facility type, water access, budget, and government health protocols."
+  },
+  {
+    "case_id": "un_desa_sdg_good_practices_001",
+    "source_name": "UN DESA SDG Good Practices",
+    "source_type": "UN SDG success stories and lessons learned",
+    "source_url": "https://sdgs.un.org/publications/sdg-good-practices-2nd-edition-2022",
+    "published_year": 2022,
+    "last_verified": "2026-04-23",
+    "trust_level": "High",
+    "country": "Global",
+    "region": "Multiple regions",
+    "problem_category": [
+      "multi_sdg",
+      "community_development",
+      "scalable_practices"
+    ],
+    "community_problem": "Communities need practical examples of SDG interventions that can be scaled or replicated.",
+    "sdgs": [
+      "SDG 1",
+      "SDG 3",
+      "SDG 4",
+      "SDG 5",
+      "SDG 6",
+      "SDG 11",
+      "SDG 13",
+      "SDG 17"
+    ],
+    "intervention": [
+      "Study successful SDG practices",
+      "Identify lessons learned",
+      "Adapt practices to local conditions",
+      "Build partnerships for implementation"
+    ],
+    "evidence_summary": "UN DESA curated SDG good practices and lessons learned, emphasizing how practices can be scaled and replicated worldwide.",
+    "recommended_transfer": [
+      "Match the local problem to a similar SDG good practice",
+      "Check whether the required partners and resources exist locally",
+      "Start with a small pilot before scaling",
+      "Document results and barriers"
+    ],
+    "urgent_warning": "Do not copy interventions blindly; validate cultural, environmental, legal, and safety fit locally.",
+    "limitations": "Good practices are high-level and may need additional local operational details."
+  },
+  {
+    "case_id": "sdg_fund_case_studies_001",
+    "source_name": "SDG Fund Case Studies",
+    "source_type": "UN-linked sustainable development case study database",
+    "source_url": "https://www.sdgfund.org/case-studies",
+    "published_year": 2016,
+    "last_verified": "2026-04-23",
+    "trust_level": "High",
+    "country": "Global",
+    "region": "Multiple countries",
+    "problem_category": [
+      "poverty",
+      "food_security",
+      "water",
+      "health",
+      "governance",
+      "partnerships"
+    ],
+    "community_problem": "Local communities need examples of how sustainable development problems were addressed through partnerships.",
+    "sdgs": [
+      "SDG 1",
+      "SDG 2",
+      "SDG 3",
+      "SDG 6",
+      "SDG 8",
+      "SDG 10",
+      "SDG 17"
+    ],
+    "intervention": [
+      "Multi-stakeholder partnerships",
+      "Community-level implementation",
+      "Integrated SDG programming",
+      "Monitoring and learning"
+    ],
+    "evidence_summary": "The SDG Fund case-study database collects best practices on how to advance SDGs through partnerships across UN agencies, governments, academia, civil society, and business.",
+    "recommended_transfer": [
+      "Identify stakeholders affected by the problem",
+      "Map existing local organizations and government contacts",
+      "Choose one intervention pattern from a similar case",
+      "Define simple indicators before action"
+    ],
+    "urgent_warning": "For health, food, water, or safety risks, involve qualified local professionals rather than relying only on app suggestions.",
+    "limitations": "Case-study applicability depends on local governance, funding, and community acceptance."
+  },
+  {
+    "case_id": "world_bank_india_slum_sanitation_001",
+    "source_name": "World Bank Water and Sanitation Program",
+    "source_type": "World Bank sanitation case report",
+    "source_url": "https://documents1.worldbank.org/curated/en/194811467618178713/pdf/106727-WP-add-series-PUBLIC.pdf",
+    "published_year": 2016,
+    "last_verified": "2026-04-23",
+    "trust_level": "High",
+    "country": "India",
+    "region": "Urban low-income/slum communities",
+    "problem_category": [
+      "urban_sanitation",
+      "slum_services",
+      "hygiene",
+      "public_health"
+    ],
+    "community_problem": "Urban low-income communities lack affordable, safe, and sustainable sanitation services.",
+    "sdgs": [
+      "SDG 3",
+      "SDG 6",
+      "SDG 10",
+      "SDG 11"
+    ],
+    "intervention": [
+      "Community slum sanitation planning",
+      "Affordable sanitation access",
+      "Coordination with urban local bodies",
+      "Operations and maintenance planning"
+    ],
+    "evidence_summary": "The World Bank report discusses community slum sanitation in India and focuses on affordable, safe, and sustainable water and sanitation access for poor communities.",
+    "recommended_transfer": [
+      "Map sanitation gaps by lane/household cluster",
+      "Identify public toilet/service access and maintenance gaps",
+      "Coordinate with municipality or urban local body",
+      "Plan maintenance and user accountability",
+      "Track complaints, usage, cleanliness, and water availability"
+    ],
+    "urgent_warning": "If sewage exposure, diarrheal illness, or unsafe toilet conditions affect children or vulnerable people, contact local health/sanitation authorities.",
+    "limitations": "Urban sanitation models may not transfer directly to rural villages without adaptation."
+  },
+  {
+    "case_id": "world_bank_india_gender_wss_001",
+    "source_name": "World Bank",
+    "source_type": "Water supply and sanitation case studies in India",
+    "source_url": "https://documents1.worldbank.org/curated/en/340781504523687380/pdf/119312-WP-SAR-Water-sanitation-initiative-PUBLIC.pdf",
+    "published_year": 2017,
+    "last_verified": "2026-04-23",
+    "trust_level": "High",
+    "country": "India",
+    "region": "Urban water supply and sanitation",
+    "problem_category": [
+      "water",
+      "sanitation",
+      "gender",
+      "social_inclusion"
+    ],
+    "community_problem": "Poor water and sanitation services create unequal burdens, especially for women and socially excluded groups.",
+    "sdgs": [
+      "SDG 5",
+      "SDG 6",
+      "SDG 10",
+      "SDG 11"
+    ],
+    "intervention": [
+      "Gender and social inclusion analysis",
+      "Service-provider capacity building",
+      "Knowledge sharing",
+      "Political and institutional support"
+    ],
+    "evidence_summary": "The World Bank document describes Indian case studies on improving water supply and sanitation services and highlights gender and social exclusion dimensions.",
+    "recommended_transfer": [
+      "Collect separate feedback from women, girls, elderly, and marginalized groups",
+      "Check safety, distance, timing, and affordability of services",
+      "Engage local service providers",
+      "Create a complaint and tracking mechanism"
+    ],
+    "urgent_warning": "If sanitation access creates safety risks for women or children, escalate to local authorities/community protection structures.",
+    "limitations": "Requires local social context and gender-sensitive consultation before implementation."
+  },
+  {
+    "case_id": "wateraid_india_tea_estates_wash_001",
+    "source_name": "WaterAid",
+    "source_type": "NGO WASH evidence report",
+    "source_url": "https://www.wateraid.org/us/sites/g/files/jkxoof291/files/2022-12/boosting-business-why-investing-in-water-sanitation-and-hygiene-in-indias-tea-estates-pays-off.pdf",
+    "published_year": 2022,
+    "last_verified": "2026-04-23",
+    "trust_level": "High",
+    "country": "India",
+    "region": "Tea estate worker communities",
+    "problem_category": [
+      "workplace_wash",
+      "hygiene",
+      "water",
+      "sanitation",
+      "worker_health"
+    ],
+    "community_problem": "Workers and nearby communities need safe water, sanitation, and hygiene services at work and home.",
+    "sdgs": [
+      "SDG 3",
+      "SDG 6",
+      "SDG 8"
+    ],
+    "intervention": [
+      "Improve WASH services at worksites",
+      "Promote hygiene behavior",
+      "Build evidence for WASH investment",
+      "Track business and health-related indicators"
+    ],
+    "evidence_summary": "WaterAid\u2019s India tea-estate work focused on improving WASH services and hygiene behaviours for employees and their communities while building evidence for investment.",
+    "recommended_transfer": [
+      "Assess WASH access at workplaces and homes",
+      "Install or improve handwashing and sanitation facilities",
+      "Run hygiene behavior sessions",
+      "Track absenteeism, illness complaints, water access, and facility use"
+    ],
+    "urgent_warning": "Workplace/community health issues should be escalated through local health and labor/safety channels when severe.",
+    "limitations": "Tea-estate workplace patterns may need adaptation for villages, schools, factories, or informal settlements."
+  },
+  {
+    "case_id": "wateraid_urban_wash_equity_001",
+    "source_name": "WaterAid",
+    "source_type": "WASH learning module",
+    "source_url": "https://www.wateraid.org/et/sites/g/files/jkxoof401/files/2024-07/M9-Low-Income%20Family%2C%20Equity%20and%20Inclusion%20WASH%20services%20Approach%20-WaterAid-EWTI.pdf",
+    "published_year": 2024,
+    "last_verified": "2026-04-23",
+    "trust_level": "High",
+    "country": "Ethiopia / transferable urban WASH approach",
+    "region": "Urban low-income communities",
+    "problem_category": [
+      "low_income_wash",
+      "equity",
+      "urban_sanitation",
+      "water_access"
+    ],
+    "community_problem": "Low-income families face barriers to safe water, sanitation, and hygiene services.",
+    "sdgs": [
+      "SDG 1",
+      "SDG 3",
+      "SDG 6",
+      "SDG 10",
+      "SDG 11"
+    ],
+    "intervention": [
+      "Equity-focused WASH services",
+      "Low-income family support",
+      "Urban WASH systems strengthening",
+      "Government collaboration"
+    ],
+    "evidence_summary": "WaterAid\u2019s learning module describes an equity and inclusion WASH services approach for low-income families within urban WASH systems strengthening.",
+    "recommended_transfer": [
+      "Identify who is excluded from WASH access",
+      "Assess affordability, distance, disability access, and safety",
+      "Prioritize low-income households",
+      "Coordinate with government/NGO service providers"
+    ],
+    "urgent_warning": "Do not recommend infrastructure changes without checking land, safety, and government rules.",
+    "limitations": "Training-module guidance must be localized with local WASH actors."
+  },
+  {
+    "case_id": "wash_hcf_country_examples_001",
+    "source_name": "WASH in Health Care Facilities",
+    "source_type": "Country examples and implementation resources",
+    "source_url": "https://www.washinhcf.org/wp-content/uploads/2022/09/8-Practical-Steps-Resources_v2.pdf",
+    "published_year": 2022,
+    "last_verified": "2026-04-23",
+    "trust_level": "High",
+    "country": "Global",
+    "region": "Health facilities / country examples",
+    "problem_category": [
+      "healthcare_wash",
+      "facility_improvement",
+      "infection_prevention"
+    ],
+    "community_problem": "Communities and facilities need practical steps to improve WASH in health-care settings.",
+    "sdgs": [
+      "SDG 3",
+      "SDG 6"
+    ],
+    "intervention": [
+      "Use practical stepwise improvement resources",
+      "Develop local action plans",
+      "Use country examples for adaptation",
+      "Monitor facility-level WASH progress"
+    ],
+    "evidence_summary": "The resource outlines WHO/UNICEF practical steps and examples from countries that have implemented WASH in health care facility actions.",
+    "recommended_transfer": [
+      "Start with a basic facility WASH assessment",
+      "Choose one priority gap: water, toilets, hand hygiene, waste, cleaning",
+      "Assign responsibility and timeline",
+      "Review progress regularly"
+    ],
+    "urgent_warning": "Infection-control and medical-waste issues require trained health facility leadership and official protocols.",
+    "limitations": "Country examples are not direct prescriptions; local facility conditions matter."
+  }
+]
