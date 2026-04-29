@@ -1,13 +1,41 @@
 SDG_KEYWORDS = {
-    "SDG 3": ["health", "fever", "disease", "clinic", "doctor", "diarrhea", "nutrition", "hygiene"],
-    "SDG 4": ["school", "education", "students", "girls", "learning", "teacher"],
-    "SDG 5": ["women", "girls", "gender", "menstrual", "safety"],
-    "SDG 6": ["water", "sanitation", "toilet", "drainage", "hygiene", "wash", "sewage"],
-    "SDG 7": ["energy", "solar", "electricity", "clean cooking"],
-    "SDG 8": ["jobs", "workers", "livelihood", "income", "employment"],
-    "SDG 11": ["community", "village", "city", "housing", "waste", "transport", "settlement"],
-    "SDG 12": ["waste", "recycling", "plastic", "reuse", "compost"],
-    "SDG 13": ["climate", "flood", "drought", "rainfall", "disaster"],
+    "SDG 3": [
+        "health", "fever", "disease", "clinic", "doctor", "diarrhea",
+        "nutrition", "hygiene", "mosquito", "heat stress"
+    ],
+    "SDG 4": [
+        "school", "classroom", "students", "education", "learning",
+        "teacher", "children"
+    ],
+    "SDG 5": [
+        "women", "girls", "gender", "menstrual", "safety"
+    ],
+    "SDG 6": [
+        "water", "sanitation", "toilet", "drainage", "hygiene",
+        "wash", "sewage"
+    ],
+    "SDG 7": [
+        "energy", "solar", "electricity", "clean cooking", "cooling"
+    ],
+    "SDG 8": [
+        "jobs", "workers", "livelihood", "income", "employment"
+    ],
+    "SDG 9": [
+        "innovation", "technology", "prototype", "engineering",
+        "low-cost", "green technology"
+    ],
+    "SDG 11": [
+        "community", "village", "city", "housing", "waste",
+        "transport", "settlement", "classroom", "heat"
+    ],
+    "SDG 12": [
+        "waste", "recycling", "plastic", "reuse", "discarded",
+        "scrap", "eco", "eco-friendly", "kulhad"
+    ],
+    "SDG 13": [
+        "climate", "heat", "extreme heat", "cooling", "temperature",
+        "climate action", "adaptation"
+    ],
 }
 
 def infer_sdgs(text: str) -> list[str]:
